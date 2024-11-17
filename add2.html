@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <img src="https://sun9-66.userapi.com/s/v1/ig2/Q6gdb9N7WiD5YQzlErFaQ1_8LkRkPIBS1CYyYd_XjYuZchW0XhTAxKQdxCbLjM6jOU0sYGvdM1NOU4sOkqX_DQlY.jpg?quality=95&as=32x69,48x104,72x156,108x234,160x347,240x520,360x780,480x1040,540x1170,591x1280&from=bu&u=Pq46-rmeTOV3KNqJkxjuBLyru3SO16N8gIKRUaKMzLA&cs=499x1080" height="320px" width="200px" alt="style" />
+</div>
+<style>
+    html, body {
+        background-image: url("https://emoji.aranja.com/static/emoji-data/img-apple-160/1f608.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    div > img {
+        border-radius: 9px;
+        transition: 1s;
+        filter: blur(40px);
+        transform: rotate3d(0, 0, 1, -180deg);
+    }
+    div > img:hover {
+        transform: rotate3d(0, 0, 1, 0deg);
+        filter: blur(0px);
+    }
+</style>
+</body>
+</html>

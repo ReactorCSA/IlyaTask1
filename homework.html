@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+</head>
+<body>
+<div class="container">
+    <a class="nav" href="add.html" target="_blank">
+        Самая красивая девушка
+    </a>
+    <a class="nav" href="add2.html" target="_blank">
+        Самая стилевая девушка
+    </a>
+    <a class="nav" href="add3.html" target="_blank">
+        Самая бодрая девушка
+    </a>
+</div>
+<style>
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    body > div {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    body > div > a {
+        display: flex;
+        color: black;
+        text-decoration: none;
+        font-size: 32px;
+        font-family: "American Typewriter";
+        width: 200px;
+        height: 112px;
+        transition: 250ms;
+        box-shadow: 3px 6px 0 dimgrey;
+        background-color: floralwhite;
+        border: 3px solid black;
+        border-radius: 9px;
+        padding: 6px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    body > div > a:nth-child(1) {
+        background-image: url("https://emoji.aranja.com/static/emoji-data/img-apple-160/1f60d.png");
+    }
+
+    body > div > a:nth-child(2) {
+        background-image: url("https://emoji.aranja.com/static/emoji-data/img-apple-160/1f608.png")
+    }
+
+    body > div > a:nth-child(3) {
+        background-image: url("https://emoji.aranja.com/static/emoji-data/img-apple-160/1f62a.png");
+    }
+
+    body > div > a:hover {
+        box-shadow: 0 0 0;
+        transition: 250ms ease-in-out;
+        transform: translateY(6px) translateX(3px);
+    }
+</style>
+</body>
+</html>

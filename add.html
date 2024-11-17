@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <img src="https://sun9-37.userapi.com/s/v1/ig2/QsN9KiMyBg8mDjkHTdJYZXb_UUlUIfmiummD-CZadK3rbWJ_23FSECVrm4VYoyeK9gCHc-y4Oj-SvZ7nGvAVfnNd.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,960x1280&from=bu&u=mBWuzreGOto7Nl403jDcXnoV4qgIaOi964HzqqDKg-4&cs=605x807" alt="beauty" width="230px" height="320px" class="picture"/>
+</div>
+
+<style>
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .picture {
+        border-radius: 9px;
+        transition: 1s;
+        filter: blur(40px);
+        transform: rotate3d(0, 0, 1, -180deg);
+    }
+    .picture:hover {
+        transform: rotate3d(0, 0, 1, 0deg);
+        filter: blur(0px);
+    }
+</style>
+</body>
+</html>
